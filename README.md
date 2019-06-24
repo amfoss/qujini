@@ -1,4 +1,7 @@
 # Qujini
+
+[![Join the chat at https://gitter.im/amfoss/Qujini](https://badges.gitter.im/amfoss/Qujini.svg)](https://gitter.im/amfoss/Qujini?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Qujini is a free and open source question paper generator for teacher, and schools to manage a question bank and generate highly customizable question papers to conduct tests.
 
 
