@@ -6,8 +6,8 @@ class Topic(models.Model):
     parent = models.ForeignKey('self', on_delete=models.CASCADE, null=True, blank=True)
 
 
-def __str__(self):
-    return self.name
+    def __str__(self):
+       return self.name
 
 
 class Type(models.Model):
