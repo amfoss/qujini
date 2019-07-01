@@ -1,4 +1,4 @@
-
+dist: xenial
 language: python
 python:
   - "3.6"
@@ -8,3 +8,4 @@ script:
   - python manage.py makemigrations questions
   - python manage.py migrate
   - python manage.py test
+  
