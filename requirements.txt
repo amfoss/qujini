@@ -1,5 +1,6 @@
 Django==2.2.1
 django-ckeditor==5.7.1
+django-js-asset==1.2.2
+gunicorn==19.9.0
 pytz==2019.1
 sqlparse==0.3.0
-
