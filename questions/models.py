@@ -1,5 +1,9 @@
 from django.db import models
+from django.contrib.auth.models import User
 
+class questions(models.Model):
+    name= models.CharField(max_length=255)
+    relation= models.ManyToManyField('self')
 
 class Topic(models.Model):
     name = models.CharField(max_length=50)
@@ -19,4 +23,8 @@ class Type(models.Model):
 
     def __str__(self):
         return self.name
+
+class creator(models.Model):
+     user= models.CharField(max_length=50)
+     designed_by= models.ForeignKey('self', on_delete= models.CASCADE)
 
