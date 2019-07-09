@@ -39,7 +39,6 @@ class Topic(models.Model):
       return self.name
 
 
-
 class Type(models.Model):
     name = models.CharField(max_length=50)
     parent= models.ForeignKey(Question, related_name='type', null=True, blank=True, on_delete= models.CASCADE)
@@ -57,4 +56,4 @@ class date(models.Model):
 
 class author(models.Model):
     designed_by= models.ForeignKey(User, related_name='+', on_delete= models.CASCADE)
-     
+
