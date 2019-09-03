@@ -1,0 +1,70 @@
+{% extends "admin/login.html" %}
+{% load i18n static %}
+
+{% load static %}
+
+{% block footer %}
+<style>
+    #footer
+    {
+        text-align: center;
+        padding: 2rem;
+        background: #eee;
+    }
+</style>
+<div id="footer">
+    This is amFOSS CMS <br>
+    <span style="font-size: 75%">&lt;&lt; By the Club | Of the Club | For the Club &gt;&gt;</span></div>
+{% endblock %}
+{% block script %}
+
+<script src="{% static 'questions/js/login-extra.js' %}"></script>
+{% endblock %}
+
+
+<!-- //new start -->
+{% block branding %}
+<style>
+        body.login {
+            background: #ffc107;
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+         }
+        .login #header {
+            height: auto;
+            padding: 1rem;
+            background: #222;
+        }
+        .login #branding { width: 100%; }
+        .login .head { display: flex; align-items: center; justify-content: center; }
+        .login #container {
+            background: #fff;
+            border: none;
+            border-radius: 4px;
+            box-shadow: 2px 3px 5px #333;
+            overflow: hidden;
+            width: 50vw;
+            margin: 0;
+            max-width: 400px;
+        }
+        .login .submit-row
+        {
+            display: flex;
+            justify-content: center;
+            padding: 2.5rem 0;
+        }
+        
+        .login .submit-row input
+        {
+            background: #ffc107;
+            color: black;
+            display: block;
+            width: 100%;
+        }
+        </style>
+<div class="head">
+        <img class="brand_img" src="{% static 'questions/images/logo_light.png' %}" style="height: 5rem;" alt="logo">
+</div>
+{% endblock %}
